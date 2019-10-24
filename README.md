@@ -1,4 +1,4 @@
-# GCP Keras Deep Learning Research
+# GCP Keras Deep Learning Research 
  
 This repo contains my research work about DNN algorithms on GCP. It's an ongoing task and updates will be made from time to time.
 
