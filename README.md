@@ -1,6 +1,6 @@
 # GCP Keras Deep Learning Research 
  
-This repo contains my research work about DNN algorithms on GCP. It's an ongoing task and updates will be made from time to time.
+This repo contains my research work about DNN algorithms on GCP. It's an ongoing research and updates will be made from time to time.
 
 * About data:   
 MINST datset (numbers), Kather dataset (small tissue slides), and CHOL dataset (large tissue slides).
