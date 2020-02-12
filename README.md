@@ -1,4 +1,4 @@
-# GCP Keras Deep Learning Research 
+# Deep Learning Research on GCP, Image Multi-Classification and Cancer Diagnosis
  
 This repo contains my research work about DNN algorithms on GCP. It's an ongoing research and updates will be made from time to time.   
    
