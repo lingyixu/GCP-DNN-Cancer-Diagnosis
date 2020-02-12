@@ -3,7 +3,7 @@
 This repo contains my research work about DNN algorithms on GCP. It's an ongoing research and updates will be made from time to time.
 
 * About data:   
-MINST datset (numbers), [Kather dataset](https://www.nature.com/articles/srep27988) (small tissue slides), and [TCGA dataset](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA-images.html) (large tissue slides).
+MNIST datset (numbers), [Kather dataset](https://www.nature.com/articles/srep27988) (small tissue slides), and [TCGA dataset](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA-images.html) (large tissue slides).
 
 * About codes:   
 Mainly in Python and Shell. Written in notebooks run on Google Cloud Datalab and/or JupterLab.
