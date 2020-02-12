@@ -1,6 +1,6 @@
 # Deep Learning Research on GCP, Image Multi-Classification and Cancer Diagnosis
  
-This repo contains my research work about DNN algorithms on GCP. It's an ongoing research and updates will be made from time to time.   
+This repo contains my research work on image identification with Prof. Mohammad Soltanieh-ha. It's an ongoing research and updates will be made from time to time.   
    
 **A research poster about DNN framework on GCP is [here](https://github.com/lingyixu/GCP-Keras-Deep-Learning/blob/master/Scalable_DNN_Framework_on_GCP.pdf). It's presented at the MSMF Reseach Exhibition on Oct 7, 2019.**
 
