@@ -1,6 +1,8 @@
 # GCP Keras Deep Learning Research 
  
-This repo contains my research work about DNN algorithms on GCP. It's an ongoing research and updates will be made from time to time.
+This repo contains my research work about DNN algorithms on GCP. It's an ongoing research and updates will be made from time to time.   
+   
+**A research poster about DNN framework on GCP is [here](https://github.com/lingyixu/GCP-Keras-Deep-Learning/blob/master/Scalable_DNN_Framework_on_GCP.pdf). It's presented at the MSMF Reseach Exhibition on Oct 7, 2019.**
 
 * About data:   
 MNIST datset (numbers), [Kather dataset](https://www.nature.com/articles/srep27988) (small tissue slides), and [TCGA dataset](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA-images.html) (large tissue slides).
@@ -21,5 +23,3 @@ After tiling, we save tiles into _TensorFlow TFRecords_ and use them as inputs o
 
 * About class imbalance:   
 Generally we have more tumor slides than normal ones. We select tumor slides based on purity. The threshold for the TCGA dataset is now 95%.
-
-* **A research poster about DNN framework on GCP is [here](https://github.com/lingyixu/GCP-Keras-Deep-Learning/blob/master/Scalable_DNN_Framework_on_GCP.pdf). It's presented at the MSMF Reseach Exhibition on Oct 7, 2019.**
