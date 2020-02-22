@@ -20,7 +20,7 @@ Kather dataset is a small-size dataset with 5000 images. Thus we apply transform
 
 * About image tiling:   
 We use `openslide` and self-defined funtions to tile large tissue slides. Reference: [HistCNN](https://github.com/javadnoorb/HistCNN).    
-For small datasets, we let Python do tiling and then upload tiles to Google Cloud Bucket. For large datasets like TCGA, we are utilizing Kubernetes through [Google Cloud GKE](https://cloud.google.com/kubernetes-engine) to speed up the process and improve algorithm scalability.   
+For small datasets, we let Python do tiling and then upload tiles to Google Cloud Bucket. For large datasets like TCGA, we are utilizing docker and Kubernetes through [Google Cloud GKE](https://cloud.google.com/kubernetes-engine) to speed up the process and improve algorithm scalability.   
 After tiling, we save tiles into _TensorFlow TFRecords_ and use them as inputs of our model.
 
 * About class imbalance:   
