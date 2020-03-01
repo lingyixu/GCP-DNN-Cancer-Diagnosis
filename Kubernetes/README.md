@@ -1,5 +1,6 @@
 ### 1. Prearation and configuration
 * Create a folder in local repository and copy (or create) all necessary files to the folder.
+  * Slides.
   * `main.py`: Python script.
   * `Dockerfile`: Used to create an image in Docker. Packages needed in `main.py` should be included.
   * `deployment.yaml`: Instructions to Kubernetes, indicating service details.
