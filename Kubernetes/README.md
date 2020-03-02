@@ -1,5 +1,7 @@
 # GKE How to Guide
 
+Use tiling as example.
+
 ### 1. Prearation and configuration
 * Create a folder in local repository and copy (or create) all necessary files to the folder.
   * Slides.
