@@ -56,8 +56,17 @@ _ps. Not necessary if running locally, but Kubernetes require service account in
   > kubectl logs -f [POD-NAME]
   
 ### 4. Clean up (ref [here](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/))
-* Delete services, pods, images, and the cluster.
+* Delete container, service, pod, image, cluster...
+  > kubectl get container -a   
+  > docker container rm [CONTAINER-ID]   
+  
+  > kubectl get services   
   > kubectl delete service [SERVICE-NAME]   
+     
+  > kubectl get pods   
   > kubectl delete pod [POD-NAME]   
+     
+  > docker image ls   
   > docker image rm [IMAGE-NAME]   
+     
   > gcloud container clusters delete [CLUSTER-NAME]
