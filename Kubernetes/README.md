@@ -57,6 +57,7 @@ _ps. Not necessary if running locally, but Kubernetes require service account in
   
 ### 4. Clean up (ref [here](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/))
 * Delete container, image, service, deployment, pod, cluster...    
+   
 **Only after deleting the deployment are we able to delete pods. Otherwise a new pod will be genereated in place of the deleted one.**
   > docker container ls -a   
   > docker container rm [CONTAINER-ID]   
