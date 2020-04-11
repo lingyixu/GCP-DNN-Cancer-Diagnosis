@@ -7,7 +7,8 @@ This repo contains my research work on image identification with Prof. Mohammad 
 ## 
 
 * About data:   
-MNIST datset (numbers), [Kather dataset](https://www.nature.com/articles/srep27988) (small tissue slides), and [TCGA dataset](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA-images.html) (large tissue slides).
+MNIST datset (numbers), [Kather dataset](https://www.nature.com/articles/srep27988) (small tissue slides), and [TCGA dataset](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA-images.html) (large tissue slides).   
+TCGA dataset overview [here](https://github.com/lingyixu/GCP-DNN-Cancer-Diagnosis/blob/master/TCGA_Overview.ipynb).
 
 * About codes:   
 Written in Python and Shell. Notebooks are run on Google Cloud Datalab and/or JupterLab.
