@@ -20,9 +20,11 @@ We design NN models for image multi-classification. We also use pre-trained mode
 Kather dataset is a small-size dataset with 5000 images. Thus we apply transformation methods including flip, shift, rotation, etc. to increase train set size. For details please refer to [Wiki](https://github.com/lingyixu/GCP-Keras-Deep-Learning/wiki/Data-Augmentation-Function-Guide).
 
 * About image tiling:   
-We use `openslide` and self-defined funtions to tile large tissue slides. Reference: [HistCNN](https://github.com/javadnoorb/HistCNN).    
-For small datasets, we let Python do tiling and then upload tiles to Google Cloud Bucket. For large datasets like TCGA, we are utilizing docker and Kubernetes through [Google Cloud GKE](https://cloud.google.com/kubernetes-engine) to speed up the process and improve algorithm scalability.   
-After tiling, we save tiles into _TensorFlow TFRecords_ and use them as inputs of our model.
+  * Large tissue slides are tiled by `openslide` and self-created funtions. API Reference: [HistCNN](https://github.com/javadnoorb/HistCNN).
+  * Workflow: query slides info → connect to public database → download slides → tile slides and save locally → upload tiles to cloud → remove local tiles and slides   
+  * For small datasets, Jupyter Notebook with GPU is enough to handle the tiling part. For large datasets like TCGA, docker and Kubernetes are utilized through [Google Cloud GKE](https://cloud.google.com/kubernetes-engine) for speeding up the tiling process and improve algorithm scalability.
+  * After tiling, tiles are saved as _TensorFlow TFRecords_ to feed the models.
+  * For Cloud Kubernetes operations, please refer to [wiki](https://github.com/lingyixu/GCP-DNN-Cancer-Diagnosis/wiki/GKE-How-to-Guide).
 
 * About class imbalance:   
-Generally we have more tumor slides than normal ones. We select tumor slides based on purity. The threshold for the TCGA dataset is now 95%.
+Generally there are more tumor slides than normal ones in most of the cancer cohorts. Tumor slides are thus selected based on purity. The threshold for the TCGA dataset is now 95%.
