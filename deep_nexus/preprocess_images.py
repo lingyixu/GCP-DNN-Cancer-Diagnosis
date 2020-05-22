@@ -19,9 +19,9 @@ def random_split(df,
     train_df = df[df['case_barcode'].isin(train_list)]
     test_df = df[df['case_barcode'].isin(test_list)]
     valid_df = df[df['case_barcode'].isin(valid_list)]
-    print('The length of train_df: {}.'.format(len(train_df)))
-    print('The length of test_df: {}.'.format(len(test_df)))
-    print('The length of valid_df: {}.'.format(len(valid_df)))
+    print('The length of train_df: {}'.format(len(train_df)))
+    print('The length of test_df: {}'.format(len(test_df)))
+    print('The length of valid_df: {}'.format(len(valid_df)))
     return train_df, test_df, valid_df
 
 
